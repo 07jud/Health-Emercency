@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Login</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="css/cardstyles.css" rel="stylesheet" type="text/css" />
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="css/mystyle.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="heads">
+  <ul>
+    <li class="headstitles">Health Emergency System</li>
+    <li style="float: right"><a href="/new_account">Sign up</a></li>
+  </ul>
+</div>
+
+<div class="container-fluid col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <div class="col-lg-4 col-md-4 col-sm-3 col-xs-2"></div>
+  <div class="logincard col-lg-4 col-md-4 col-sm-6 col-xs-8">
+    <p class="pone">Account Login</p>
+
+    <hr style="margin-top: 15px" />
+    <center>
+      <div class="simplecircle">
+        <span><i class="glyphicon glyphicon-lock"></i></span>
+      </div>
+    </center>
+
+
+        <div th:if="${loginError}" class="alert alert-danger alert-dismissible show  message"
+                th:with="errorMsg=${session['SPRING_SECURITY_LAST_EXCEPTION'].message}" role="alert">
+          <span th:text="${errorMsg}"></span>
+
+        </div>
+
+    <form th:action="@{/login}" method="post">
+      <div>
+        <label class="labs">Email</label>
+        <input
+                type="email"
+                required
+                class="form-control txtbox"
+                id="username"
+                name="username"
+                aria-describedby="emailHelp"
+                placeholder="Enter email"
+        />
+      </div>
+      <div>
+        <label class="labs">Password</label>
+        <input
+                type="password"
+                required
+                class="form-control txtbox"
+                id="password"
+                name="password"
+                placeholder="Password"
+        />
+      </div>
+      <button type="submit" class="form-control btntype1">Submit</button>
+    </form>
+    <br />
+
+    <center>
+      <p>Don't have account? <a href="/new_account">Sign Up</a></p>
+    </center>
+  </div>
+</div>
+<div class="footx"></div>
+
+<div class="emptybody"></div>
+<!--Footer area-->
+
+
+<div class="footer2">
+  <center>
+    <p class="p">
+      &copy;
+      <script type="text/javascript">
+            document.write(new Date().getUTCFullYear());
+          </script>
+      all rights reserved
+    </p>
+  </center>
+</div>
+
+<script src="Dash/vendor/jquery/jquery.min.js"></script>
+</body>
+</html>

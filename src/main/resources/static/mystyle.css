@@ -1,0 +1,273 @@
+body{
+    background-color: silver !important;
+}
+
+div.col-md-6, div.col-md-12{
+    padding: 0px 2px;
+}
+
+.blank_area{
+    margin-bottom: 500px;
+}
+#msform .txtbox{
+    border-color: black;
+    border-radius: 1px;
+}
+#msform .txtbox:hover{
+    outline: none;
+    border-color: #00CFBC;
+    box-shadow: none;
+}
+
+#msform .txtbox:focus{
+    
+    border-color: #00CFBC;   
+    border-width: 2px;
+outline: none;
+}
+
+.btntype1{
+
+    background-color: #00CFBC;
+    color: white;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 1px;
+    border-color: #00CFBC;
+}
+
+.btntype1:hover{
+    /*background-color: white;*/
+    /*color: #00CFBC;*/
+
+}
+
+.emptybody{
+    padding-bottom: 500px;
+}
+
+.btntype1:focus{
+    outline: none;
+    box-shadow: none;
+    /*     background-color: white;
+         color: #00CFBC;*/
+
+
+}
+
+.labs{
+    margin-top: 20px;
+    font-size: 13px;
+    font-weight: normal;
+    text-transform: uppercase;
+    
+    
+
+}
+
+.hrtype1{
+    border-width: 2px;
+
+    border-color: #00CFBC;
+    margin-bottom: 0px;
+}
+
+.separator{
+    width: 100%;
+    height: 20px;
+    background-color: #06443E;
+    color: white;
+    margin-top: 20px;
+}
+
+.separator2{
+    width: 100%;
+    height: 20px;
+    background-color: #06443E;
+    color: white;
+    margin-top: 100px;
+}
+
+.badgetype1{
+    margin-bottom: -20px;
+    align-items: flex-end;
+}
+
+.select1{
+    border-color: black;
+    border-radius: 1px;
+}
+.select1:hover{
+    outline: none;
+    border-color: #00CFBC;
+    box-shadow: none;
+}
+
+.select1:focus{
+    outline: none;
+    border-color: #00CFBC;   
+    border-width: 2px;
+
+
+}
+
+.footer{
+
+    height: 200px;
+    background-color: #0A5A52;
+    /*position: static;*/
+    margin-top: 30px;
+    background-image: url(../assets/logo_for_footer.png);
+
+}
+
+.footer2{
+
+    height: 20px;
+    background-color: #06443E;
+    /*position: static;*/
+    margin-bottom: 0px;
+
+}
+
+.p{
+    color: white;
+    position: relative;
+    bottom: 20%;
+}
+/*Twitter Socials*/
+.btnsocialstw{
+    height: 90px;
+    width: 90px;
+    border-radius: 100px;
+    background-color: #0A5A52;
+    border-color: #32A5FF;
+    border-width: 5px;
+    color: white;
+
+
+
+}
+
+.btnsocialstw:hover{
+    height: 90px;
+    width: 90px;
+    border-radius: 100px;
+    background-color: #32A5FF;
+    border-color: #32A5FF;
+    color: white;
+
+}
+
+/*Facebook Socials*/
+.btnsocialsfb{
+    height: 90px;
+    width: 90px;
+    border-radius: 100px;
+    background-color: #0A5A52;
+    border-color: #12F5E7;
+    border-width: 5px;
+    color: white;
+
+
+
+}
+
+.btnsocialsfb:hover{
+    height: 90px;
+    width: 90px;
+    border-radius: 100px;
+    background-color: #12F5E7;
+    border-color: #12F5E7;
+    color: white;
+
+}
+
+/*Youtube Socials*/
+.btnsocialsyt{
+    height: 90px;
+    width: 90px;
+    border-radius: 100px;
+    background-color: #0A5A52;
+    border-color: #CD0707;
+    border-width: 5px;
+    color: white;
+
+
+
+}
+
+.btnsocialsyt:hover{
+    height: 90px;
+    width: 90px;
+    border-radius: 100px;
+    background-color: #CD0707;
+    border-color: #CD0707;
+    color: white;
+
+}
+
+/*Linkedin Socials*/
+.btnsocialsln{
+    height: 90px;
+    width: 90px;
+    border-radius: 100px;
+    background-color: #0A5A52;
+    border-color: #8FCCFC;
+    border-width: 5px;
+    color: white;
+
+
+
+}
+
+.btnsocialsln:hover{
+    height: 90px;
+    width: 90px;
+    border-radius: 100px;
+    background-color: #8FCCFC;
+    border-color: #8FCCFC;
+    color: white;
+
+}
+
+.anc{
+    height: 90px;
+    width: 90px;
+    border-radius: 100px;
+    background-color: #0A5A52;
+    border-color: #8FCCFC;
+    border-width: 5px;
+    color: white;     
+}
+
+.simplecircle{
+    height: 0px;
+    width: 0px;
+    border-radius: 50px;
+    background-color: #adadad;
+    border-color: #8FCCFC;
+    border-width: 2px;
+   
+    box-shadow: 0px 2px 1px 0px;
+ margin-top: -30px;
+  color: black;
+  margin-left: -30px;
+ margin-bottom: 18px;
+ 
+
+}
+
+.notification{
+    margin-top: 20px;
+    background-color: #32A5FF;
+    color: white;
+    padding: 20px;
+    letter-spacing: 1.5px;
+    line-height: 1.5em;
+}
+
+.icon{
+    color: yellow;
+}

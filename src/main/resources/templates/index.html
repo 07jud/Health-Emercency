@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+  <head>
+    <title>Homepage</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/cardstyles.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/mystyle.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="heads">
+      <ul>
+        <li class="headstitles">Demo Web</li>
+        <li style="float: right"><a href="/login">Login / Sign up</a></li>
+        <li style="float: right"><a href="/contactus_page">Contact us</a></li>
+        <li style="float: right"><a href="/about_us">About us</a></li>
+      </ul>
+    </div>
+
+    <div class="container-fluid col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <div class="col-lg-4 col-md-4 col-sm-3 col-xs-2"></div>
+      <div class="logincard col-lg-4 col-md-4 col-sm-6 col-xs-8">
+        <p class="pone">Homepage</p>
+
+        <hr style="margin-top: 15px" />
+        <!-- <center>
+          <div class="simplecircle">
+            <span><i class="glyphicon glyphicon-envelope"></i></span>
+          </div>
+        </center> -->
+        <div
+          class="alert alert-danger alert-dismissible fade show"
+          role="alert"
+          th:if="${loginError}"
+        >
+          <strong>
+            <div
+              th:with="errorMsg=${session['SPRING_SECURITY_LAST_EXCEPTION'].message}"
+            >
+              <span th:text="${errorMsg}">Wrong input!</span>
+            </div>
+          </strong>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="alert"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        
+        <br />
+        
+      </div>
+    </div>
+    <div class="footx"></div>
+
+    <div class="emptybody"></div>
+    <!--Footer area-->
+
+    <div class="footer">
+      <!--<center><p class="p">&copy; <script type="text/javascript">document.write( new Date().getUTCFullYear() );</script> all right reserved</p></center>-->
+
+      <center>
+        <h4 style="color: white; padding-top: 30px; padding-bottom: 10px">
+          Reach us here
+        </h4>
+        <input type="button" class="btnsocialstw" value="Twitter" />
+        <input type="button" class="btnsocialsfb" value="Facebook" />
+        <input type="button" class="btnsocialsyt" value="Youtube" />
+        <input type="button" class="btnsocialsln" value="Linkedin" />
+        <!--<div style="width:90px;height:90px;border:3px solid #000; border-radius: 50px">This is a rectangle!</div>-->
+      </center>
+    </div>
+    <div class="footer2">
+      <center>
+        <p class="p">
+          &copy;
+          <script type="text/javascript">
+            document.write(new Date().getUTCFullYear());
+          </script>
+          all right reserved
+        </p>
+      </center>
+    </div>
+  </body>
+</html>

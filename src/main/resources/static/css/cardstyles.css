@@ -1,0 +1,138 @@
+body{
+    background-color: whitesmoke;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(../fonts/Ubuntu-Regular.ttf);
+  
+  font-family: mySecondFont;
+ src: url(../fonts/BalooTamma2-Regular.ttf);
+}
+
+.heads{
+    height: 80px;
+    width: 100%;
+    background-color: #0A5A52;
+    box-shadow: 0px 0px 2px 2px grey;
+
+}
+
+.headstitles{
+    padding-left: 10px;
+    padding-top: 22px;
+    color: white;
+    font-size: 24px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /*background-color: #333;*/
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 30px 40px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+      
+}
+
+.card1{
+    width: 350px;
+    height: border-box;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px 1px #adadad;
+   
+    margin-bottom: 20px;
+    margin-left: 80px;
+    margin-top: 40px;
+
+   
+}
+
+.card2{
+    width: 350px;
+    height: auto;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px 1px #adadad;
+    margin-left: 80px;
+   margin-top: 40px;
+}
+
+.card3{
+    width: 350px;
+    height: auto;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px 1px #adadad;
+    margin-left: 80px;
+   margin-top: 40px;
+}
+
+.card4{
+    width: auto;
+    height: auto;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px 1px #adadad;
+    margin-left: 80px;
+   margin-top: 40px;
+}
+
+.pone{
+    font-size: 26px;
+    font-family: myFirstFont;
+    padding-left: 10px;
+    padding-top: 20px;
+    /*font-family: mySecondFont;*/
+    
+  
+}
+
+.footx{
+    height: 200px;
+    background-color: #0A5A52;
+    margin-bottom: 0px;
+    /*border-radius: 20px;*/
+}
+
+.subt{
+    /*font-family: mySecondFont;*/
+}
+
+.footx2{
+    height: 200px;
+    background-color: #0A5A52;
+    margin-bottom: 0px;
+}
+
+
+.logincard{
+    width: 350px;
+    height: border-box;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 2px 0px 1px #0A5A52;
+   
+    margin-bottom: 20px;
+    margin-top: 40px;
+
+   
+}

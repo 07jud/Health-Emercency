@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/cardstyles.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/mystyle.css" rel="stylesheet" type="text/css"/>
+
+    </head>
+    <body>
+        <div class="heads">
+           
+            <ul>
+    <li class="headstitles">Health Emergency System</li>
+  <li style="float:right"><a href="/login">Login</a></li>
+
+
+
+</ul>
+        </div>
+
+
+            
+            <div class=" container-fluid col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="col-lg-4 col-md-4 col-sm-3 col-xs-2"></div>
+                <div class="logincard col-lg-4 col-md-4 col-sm-6 col-xs-8">
+                    <p class="pone">Create Account</p>
+                   
+                    <hr style="margin-top: 15px;"/>
+                     <center><div class="simplecircle">
+                       <span><i class="glyphicon glyphicon-user"></i></span>
+                        </div></center>
+
+                    <div th:if="${message != null}" class="alert alert-danger "
+                         role="alert">
+                        [[${message}]]
+
+                    </div>
+
+<form method="post" th:action="@{/account_reg}" th:object="${user}"  >
+                     <div >
+                            <label class="labs">First Name</label>
+                            <input type="text" required placeholder="first name" th:field="*{firstName}" class="form-control txtbox"/>
+                         <p  th:if="${#fields.hasErrors('firstName')}" th:class="${#fields.hasErrors('firstName')}? error">
+                             Invalid Age</p>
+                     </div>
+                          <div >
+                            <label class="labs">Last Name</label>
+                            <input type="text" required placeholder="last name" th:field="*{lastName}" class="form-control txtbox"/>
+                        </div>
+                          <div >
+                            <label class="labs">Email</label>
+                            <input type="email" required placeholder="email" th:field="*{email}" class="form-control txtbox"/>
+                        </div>
+                          <div >
+                            <label class="labs">Password</label>
+                            <input type="password" required placeholder="password" th:field="*{password}"  class="form-control txtbox"/>
+                        </div>
+
+                    
+                    <input type="submit" value="Submit" class="form-control btntype1"/>
+                    <br/>
+                  <center><p>Already Have Account? <a href="/login">Login</a></p></center>
+                    </form>
+               </div>
+
+            </div>
+            <div class="footx">
+                
+            </div>
+        
+        <div class="emptybody"></div>
+       <!--Footer area-->
+        
+
+          <div class="footer2">
+                 <center><p class="p">&copy; <script type="text/javascript">document.write( new Date().getUTCFullYear() );</script> all rights reserved</p></center>
+               
+            </div>
+
+    </body>
+</html>
